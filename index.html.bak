@@ -33,6 +33,7 @@ p {
   font-family: "Calibri", "Arial";
   color: white;
   background-color: #33ccff;
+box-shadow: 2px 2px 2px 2px black;
 }
 
 div {
@@ -69,8 +70,8 @@ div {
       <div style="clear: both;"></div>
       <div id="tswfooter">
         <!-- start of footer section: insert your copyright notice, etc, here -->
-        <p> Placeholder content for the footer: please replace these words with
-          your real content. </p>
+        <p>This will be where the footer is located. I don't know what I am
+          going to put here</p>
         <!-- end of footer section: insert your copyright notice, etc, above this line -->
       </div>
     </div>
