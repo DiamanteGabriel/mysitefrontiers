@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NumGame</title>
+    <link rel="stylesheet" href="numgame.css"
 </head>
-<body onload="loadGame()">
+<body id="background" onload="loadGame()">
     <h1>Number Guessing Game</h1>
     <p>Rules:</p>
 
     <label>Guess: </label>
     <input id="guess" type="number" min="0">
     <button onclick="makeGuess()">GUESS!</button>
-
+    <button onclick="reset()">Reset</button>
     <br/>
 
-    <p id="report">Start of report</p>
+    <p id="totalGuesses">Guesses: 0</p>
+    <p id="report">Guess History:</p>
 
     <script src="numgame.js"></script>
 </body>

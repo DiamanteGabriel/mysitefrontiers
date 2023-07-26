@@ -7,7 +7,7 @@ img {
   max-width: 100%;
   width: auto;
   height: auto;
-box-shadow: 2px 2px 4px 6px black;
+box-shadow: 0px 3px 6px 2px white;
 }
 
 input, select, button, textarea {
@@ -75,7 +75,7 @@ h1 {
   color: #000066;
   background-color: #ccffff;
   text-decoration: underline;
-box-shadow: 2px 2px 4px 6px black;
+box-shadow: 0px 2px 4px 2px white;
 }
 
 div {
@@ -87,7 +87,7 @@ p {
   font-family: "Calibri";
   color: white;
   background-color: #33ccff;
-box-shadow: 2px 2px 4px 6px black;
+box-shadow: 0px 2px 4px 2px white;
   border-width: 2px;
   border-style: groove;
 }
@@ -107,5 +107,9 @@ h2 {
 h4 {
   color: #000066;
   background-color: #ccffff;
+}
+
+h3 {
+  box-shadow: 0px 2px 4px 2px white;
 }
 
