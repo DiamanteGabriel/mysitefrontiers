@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NumGame</title>
-    <link rel="stylesheet" href="numgame.css">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="calculator.css">
     <link rel="stylesheet" href="nav.css">
 </head>
-<body onload="loadGame()">
+<body>
     <header>
-        <h1>Number Guessing Game</h1>
+        <h1>Calculator App</h1>
     </header>
-    <p>Rules:</p>
-    <ol>
-        <li>A number between 0 and 100 will be randomly chosen.</li>
-        <li>Guess a number and the report will say if it is smaller or larger than the secret number.</li>
-        <li>When you guess the right number, it will declare you have found it and you win.</li>
-        <li>CHALLENGE: Try to get the number in less then 7 guesses.</li>
-    </ol>
+    <input id="value1" type="number">
+        <input id="value2" type="number">
+    
+    <br>
 
-    <label>Guess: </label>
-    <input id="guess" type="number" min="0">
-    <button onclick="makeGuess()">GUESS!</button>
-    <button onclick="reset()">Reset</button>
-    <br/>
+    <button onclick="addvalues()">+</button>
+    <button onclick="subtractvalues()">-</button>
+    <button onclick="multiplyvalues()">*</button>
+    <button onclick="dividevalues()">/</button>
+    <button onclick="reset()">Reset History</button>
 
-    <p id="totalGuesses">Guesses: 0</p>
-    <p id="report">Guess History:</p>
+
+    <p>RESULT: <span id="result"></span></p>
+
+    <p>History: <span id="history"></span></p>
+
 
     <div id="tswsidecol">
         <div id="tswsideproper">
@@ -37,11 +37,11 @@
           <p class="links" id="links"> <a href="interests.html">Interests</a></p>
           <p class="links" id="links"> <a href="town.html">Town</a></p>
           <p class="links" id="links"> <a href="numgame.html">Guessing Game</a></p>
-          <p class="links"> <a href="calculator.html">Calculator App</a></p>
+          <p class="links" id="links"> <a href="calculator.html">Calculator App</a></p>
           <!-- end of side column: put your navigation menu, etc, above this line -->
         </div>
     </div>
 
-    <script src="numgame.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>

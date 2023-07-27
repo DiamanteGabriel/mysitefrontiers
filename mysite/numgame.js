@@ -32,16 +32,13 @@ function makeGuess() {
         totalGuesses.innerHTML = `Guesses: ${numGuess}`;
         // you win styling
         
-        body.style.color = "yellow";
-        body.style.backgroundColor = "green";
-        links.style.backgroundColor = "green";
+        body.style.backgroundColor = "lime";
+        
     }
 }
 
 function reset() {
-    body.style.color = "black";
     body.style.backgroundColor = "aquamarine";
-    links.style.backgroundColor = "aquamarine";
     report.innerHTML = `Guess History`;
     numGuess = 0
     totalGuesses.innerHTML = `Guesses: ${numGuess}`
