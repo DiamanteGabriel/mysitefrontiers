@@ -1,8 +1,8 @@
 const guess = document.getElementById("guess");
 const report = document.getElementById("report");
-const background = document.getElementById("background")
-const totalGuesses = document.getElementById("totalGuesses")
-const links = document.getElementById("links")
+const body = document.body;
+const totalGuesses = document.getElementById("totalGuesses");
+const links = document.getElementById("links");
 
 const MAXNUM = 100;
 let secret;
@@ -32,15 +32,15 @@ function makeGuess() {
         totalGuesses.innerHTML = `Guesses: ${numGuess}`;
         // you win styling
         
-        background.style.color = "yellow";
-        background.style.backgroundColor = "green";
+        body.style.color = "yellow";
+        body.style.backgroundColor = "green";
         links.style.backgroundColor = "green";
     }
 }
 
 function reset() {
-    background.style.color = "black";
-    background.style.backgroundColor = "aquamarine";
+    body.style.color = "black";
+    body.style.backgroundColor = "aquamarine";
     links.style.backgroundColor = "aquamarine";
     report.innerHTML = `Guess History`;
     numGuess = 0
