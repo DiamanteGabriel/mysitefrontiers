@@ -19,6 +19,7 @@ function buy(store) {
     if (widget.getAttribute("auto") == `true` ) harvest(widget);
 }
 
+
 function harvest(widget) {
     // Only run if currently not harvesting
     if (widget.hasAttribute("harvesting")) return;

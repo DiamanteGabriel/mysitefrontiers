@@ -63,6 +63,7 @@ div#tswfooter {
     box-shadow: 0px 2px 4px 6px black;
     border-width: 2px;
     border-style: groove;
+    background-color: #33ccff;
 }
 
 a {

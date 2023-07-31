@@ -18,11 +18,11 @@ for (let store of stores) {
     store.appendChild(nameTag);
 
     let priceTag = document.createElement("p");
-    priceTag.innerHTML = `${store.getAttribute("cost")} points`;
+    priceTag.innerHTML = `${store.getAttribute("cost")} Alien data`;
     store.appendChild(priceTag);
 
     let reapTag = document.createElement("p");
-    reapTag.innerHTML = `+${store.getAttribute("reap")} sqft`;
+    reapTag.innerHTML = `+${store.getAttribute("reap")} data`;
     store.appendChild(reapTag);
 
     let cooldownTag = document.createElement("p");
