@@ -4,8 +4,8 @@ const ctx = gameboard.getContext("2d");
 
 let boardWidth = 500;
 let boardHeight = 500;
-let paddleSpin = 7; // >= 0.0
-let paddleForce = 1.2; // >= 1.0
+let paddleSpin = 1.5; // >= 0.0
+let paddleForce = 1.1; // >= 1.0
 let paddleWidth = 25;
 let paddleLengthL = 100;
 let paddleLengthR = 100;
@@ -50,13 +50,13 @@ function resetGame() {
 }
 
 function resetPaddles() {
-    paddleL=new Paddle(0,boardHeight/2 - paddleLengthL/2,paddleLengthL,paddleWidth, "red");
-    paddleR=new Paddle(boardWidth-paddleWidth, boardHeight/2 - paddleLengthR/2,paddleLengthR,paddleWidth, "blue");
+    paddleL=new Paddle(0,boardHeight/2 - paddleLengthL/2,paddleLengthL,paddleWidth, "lime");
+    paddleR=new Paddle(boardWidth-paddleWidth, boardHeight/2 - paddleLengthR/2,paddleLengthR,paddleWidth, "darkGreen");
     
 }
 
 function resetBall() {
-    ball = new Ball(boardWidth/2, boardHeight/2, 1, -1, ballRadius, "green")
+    ball = new Ball(boardWidth/2, boardHeight/2, 2, -2, ballRadius, "green")
 }
 
 function clearBoard() {

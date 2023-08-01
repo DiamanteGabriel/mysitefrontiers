@@ -46,7 +46,7 @@ class Paddle {
         //   ball.y to see where the ball is
         //   ball.vy to see where the ball is going
 
-        let cpuVY= paddleForce
+        let cpuVY= 3;
         if(paddleR.y<ball.y){
 
             paddleR.vy=cpuVY;
