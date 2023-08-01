@@ -31,22 +31,31 @@ class Paddle {
     }
 
     moveCPU(ball) {
-        let heightdif = ball.y - (paddleR.y + paddleLength/2);
+        // let heightdif = ball.y - (paddleR.y + paddleLength/2);
         
-        if (heightdif > 5) {
-            paddleR.vy = paddleVelocity;
-        } else if (heightdif < 5) {
-            paddleR.vy = -paddleVelocity;
-        } else {
-            paddleR.vy = 0;
-        }
+        // if (heightdif > 5) {
+        //     paddleR.vy = paddleVelocity;
+        // } else if (heightdif < 5) {
+        //     paddleR.vy = -paddleVelocity;
+        // } else {
+        //     paddleR.vy = 0;
+        // }
         // Use the properties of the ball to set a new velocity
         // Helpful pieces:
         //   Math.min() and Math.max() to limit the velocity
         //   ball.y to see where the ball is
         //   ball.vy to see where the ball is going
 
-        this.vy = 0; // Modify this line to add your own code
+        let cpuVY= paddleForce
+        if(paddleR.y<ball.y){
+
+            paddleR.vy=cpuVY;
+        }else if (paddleR.y>ball.y){
+
+            paddleR.vy=-cpuVY
+        }
+        
+        
 
         // Finally, call move to move the paddle normally
         this.move();
