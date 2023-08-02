@@ -7,7 +7,6 @@ body {
     max-width: 100%;
     width: auto;
     height: auto;
-  box-shadow: 0px 3px 6px 2px white;
   }
   
   input, select, button, textarea {
@@ -113,4 +112,8 @@ body {
   
   h3 {
     box-shadow: 0px 2px 4px 2px white;
+  }
+
+  .town {
+    padding: 18px;
   }
