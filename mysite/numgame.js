@@ -11,7 +11,7 @@ let numGuess = 0;
 function loadGame() {
     guess.max = MAXNUM;
     secret = Math.floor(Math.random() * MAXNUM + 1);
-// report.innerHTML = secret;
+ // report.innerHTML = secret;
 }
 
 function makeGuess() {
@@ -33,6 +33,9 @@ function makeGuess() {
         // you win styling
         
         body.style.backgroundColor = "lime";
+        if (numGuess > 7) {
+            report.innerHTML += `<br/>You have completed the Challenge`;
+        }
         
     }
 }
